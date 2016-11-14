@@ -1,7 +1,7 @@
 '''
 疑问：
 1 TEMA、DEMA不能输出
-2 
+2 close 怎么用
 '''
 
 import pandas as pd
