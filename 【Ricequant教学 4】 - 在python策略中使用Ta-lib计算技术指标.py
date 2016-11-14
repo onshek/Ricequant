@@ -1,10 +1,12 @@
 '''
 疑问：
-1 TEMA、DEMA不能输出
-2 close 怎么用
+1 已解决：TEMA、DEMA不能输出
+close 所取天数应大于平均数所取的天数
+2 已解决：close 怎么用
+
 '''
 
-import pandas as pd
+import pandas as pd 
 import numpy as np
 import talib
 import statsmodels
@@ -15,9 +17,10 @@ def init(context):
 	context.commission = .08	# 和默认数值相同，可以省略代码
 	update_universe([context.s1])
 
-def handle_bar(context, bar_dict):
-	closematrix = history(30, '1d','close') 
-	close = closematrix[context.s1].values
+def handle_bar(context, bar_dict): 
+	# 取100天数据，最后给出71天的移动平均
+#	close = history(100, '1d','close')[context.s1]	# 返回Series
+	close = history(100, '1d','close')[context.s1].values	# convert Series to array
 	MA_short = bar_dict[context.s1].mavg(20, frequency= 'day')
 	MA_long = bar_dict[context.s1].mavg(50, frequency= 'day')
 
@@ -39,7 +42,10 @@ def handle_bar(context, bar_dict):
 #	today_mavg = avg[-1]
 #	ystd_mavg = avg[-2]
 
-	#MA_Type: 0=SMA, 1=EMA, 2=WMA, 3=DEMA, 4=TEMA, 5=TRIMA, 6=KAMA, 7=MAMA, 8=T3 (Default=SMA)
+	# MA_Type: 0=SMA, 1=EMA, 2=WMA, 3=DEMA, 4=TEMA, 5=TRIMA, 6=KAMA, 7=MAMA, 8=T3 (Default=SMA)
+	# 返回的是 array
+	# 只要取平均数的最后一天
+	# handle_bar(context, bar_dict)是每一天调用一次
 
 	SMA = talib.MA(close, 30, matype=0)[-1]
 	EMA = talib.MA(close, 30, matype=1)[-1]
@@ -52,3 +58,11 @@ def handle_bar(context, bar_dict):
 	plot('WMA', WMA)
 	plot('DEMA', DEMA)
 	plot('TEMA', TEMA)
+	plot('close', close[-1])	# 只要最后一天
+
+
+
+
+
+
+
