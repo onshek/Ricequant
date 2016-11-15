@@ -114,5 +114,3 @@ def handle_bar(context, bar_dict):
 
 	if macd[-1]<macdsignal[-1] and curPosition != 0:
 		order_target_percent(context.s1, 0)
-
-
