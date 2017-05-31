@@ -1,3 +1,7 @@
+# 视频链接
+
+ [![王瀚锋_Ricequant_test](http://ol5pvu2w5.bkt.clouddn.com/%E7%8E%8B%E7%80%9A%E9%94%8B_Ricequant_test.png)](http://ol5pvu2w5.bkt.clouddn.com/%E7%8E%8B%E7%80%9A%E9%94%8B_Ricequant_test.mov)
+
 # 前期思考
 
 所给的题目是基于 A 股市值最大的 1000 家股票，自由做一个策略，所以大致的思路是，选取权重股来做波段操作。里面也考虑了是不是用 CPI 来做相关性分析，但考虑到各股票的权重分配和代码实现比较困难，最终还是选取了一个较为常见和简便的策略，那就是根据 MACD 均线情况来做交易。
