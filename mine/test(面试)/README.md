@@ -1,6 +1,5 @@
-# 视频链接
+# ~~视频链接~~
 
- [![王瀚锋_Ricequant_test](http://ol5pvu2w5.bkt.clouddn.com/%E7%8E%8B%E7%80%9A%E9%94%8B_Ricequant_test.png)](http://ol5pvu2w5.bkt.clouddn.com/%E7%8E%8B%E7%80%9A%E9%94%8B_Ricequant_test.mov)
 
 # 前期思考
 
