@@ -1,3 +1,7 @@
+'''
+本篇用于回测平台运行
+'''
+
 import numpy as np  
 from sklearn import linear_model
 
@@ -13,8 +17,8 @@ def before_trading(context):
     pass
 
 def calculate(context, bar_dict):
-    # 取最近 161 个交易日的 300 指数收盘点位
-    close = history_bars('IF99', 161, '1d', 'close')
+    # 取最近 161 个交易日的 IF88 收盘点位
+    close = history_bars('IF88', 161, '1d', 'close')
     # 计算最近 160 个交易日的收益率
     return_close = []
     for i in range(0, 160):
