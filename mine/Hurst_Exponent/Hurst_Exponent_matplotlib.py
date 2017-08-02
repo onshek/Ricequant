@@ -5,7 +5,7 @@
 单独画图
 '''
 
-close_data = get_price('IF88', start_date='2016-01-01', end_date='2017-06-30')['close']
+close_data = get_price('IF88', frequency='1d', start_date='2016-01-01', end_date='2017-06-30')['close']
 print('len(close_data): ', len(close_data))
 
 revenue_close_data = 100 * close_data.pct_change().dropna()
@@ -32,9 +32,9 @@ def test_calculate_hurst():
             # 每组对应的长度
             list_size = int(80 / obj_list_num)
             # 每组起始
-            start = list_size * i
+            start = -(list_size * (i + 1))  -1
             # 每组结束
-            end = list_size * (i + 1)
+            end = -(list_size * i) - 1
             # 取出片段
             data = return_close[start: end]
             #print('data: ', data)
@@ -106,7 +106,7 @@ def finish_hurst():
         end_num = (i + 1) + 80
         piece_revenue_close_data =  revenue_close_data[start_num: end_num]
         
-        print('start: ', i)
+        #print('start: ', i)
         test_calculate_hurst()
 
 
@@ -146,7 +146,7 @@ ax2.set_xlabel('trading date, starting from 2016-05-06')
 ax2.set_ylabel('value(%)')
 ax2.legend(loc='best')
 
-ax3.plot(Close_data_ema_7, label='Close_data_ema_3', alpha=0.9)
+ax3.plot(Close_data_ema_3, label='Close_data_ema_3', alpha=0.9)
 ax3.plot(Close_data_ema_20, label='Close_data_ema_20', alpha=0.9)
 ax3.set_title('Close')
 ax3.set_xlabel('trading date, starting from 2016-05-06')
