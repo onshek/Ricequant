@@ -52,8 +52,13 @@ def calculate(context, bar_dict):
             dev_data = data - mean_data
             #print('dev_data: ', dev_data)
             
-            # 计算每个离差序列的最大差距(widest difference)
-            diff_data = max(data) - min(data)
+            # 计算离差序列的 cumsum
+            for dev in dev_data:
+                cumsum_dev_data = dev_data.cumsum()
+            #print('cumsum_dev_data: ', cumsum_dev_data)
+            
+            # 计算每个离差序列的 cumsum 的最大差距(widest difference)
+            diff_data = max(cumsum_dev_data) - min(cumsum_dev_data)
             #print('diff_data: ', diff_data)
             
             # 计算每个片段的标准差(standard deviation)
@@ -93,7 +98,7 @@ def calculate(context, bar_dict):
     regr = linear_model.LinearRegression()
     regr.fit(lg_list_size, lg_list_ars_data)
     #HURST指数
-    beta = regr.coef_  * 2
+    beta = regr.coef_ 
     #print('H:', beta)
     return beta
     

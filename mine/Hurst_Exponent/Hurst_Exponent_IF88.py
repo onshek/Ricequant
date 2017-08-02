@@ -61,8 +61,13 @@ def calculate(context, bar_dict):
             dev_data = data - mean_data
             #print('dev_data: ', dev_data)
             
-            # 计算每个离差序列的最大差距(widest difference)
-            diff_data = max(data) - min(data)
+            # 计算离差序列的 cumsum
+            for dev in dev_data:
+                cumsum_dev_data = dev_data.cumsum()
+            #print('cumsum_dev_data: ', cumsum_dev_data)
+            
+            # 计算每个离差序列的 cumsum 的最大差距(widest difference)
+            diff_data = max(cumsum_dev_data) - min(cumsum_dev_data)
             #print('diff_data: ', diff_data)
             
             # 计算每个片段的标准差(standard deviation)
@@ -102,7 +107,7 @@ def calculate(context, bar_dict):
     regr = linear_model.LinearRegression()
     regr.fit(lg_list_size, lg_list_ars_data)
     #HURST指数
-    Hurst = regr.coef_  * 2
+    Hurst = regr.coef_  
     #print('H:', Hurst)
     return Hurst
       
@@ -126,7 +131,7 @@ def handle_bar(context, bar_dict):
         #plot('close_ema_3', close_ema_3)
         #plot('close_ema_20', close_ema_20)
         
-    if (context.Hurst_ema_3 < context.Hurst_ema_20) and (context.Hurst_ema_3 < 0.5):
+    if (context.Hurst_ema_3 > context.Hurst_ema_20) and (context.Hurst_ema_3 > 0.5):
         #与市场趋势一致
         if context.Close_ema_3 > context.Close_ema_20:
             if sell_qty > 0:
@@ -138,7 +143,7 @@ def handle_bar(context, bar_dict):
                 sell_close(context.s1,1)            
             if sell_qty == 0:
                 sell_open(context.s1,1)  
-    elif (context.Hurst_ema_3 > context.Hurst_ema_20) and (context.Hurst_ema_3 > 0.5):
+    elif (context.Hurst_ema_3 < context.Hurst_ema_20) and (context.Hurst_ema_3 < 0.5):
         #与市场趋势相反
         if context.Close_ema_3 > context.Close_ema_20:
             if buy_qty > 0:
