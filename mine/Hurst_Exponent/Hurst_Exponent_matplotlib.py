@@ -48,8 +48,7 @@ def test_calculate_hurst():
             #print('dev_data: ', dev_data)
             
             # 计算离差序列的 cumsum
-            for dev in dev_data:
-                cumsum_dev_data = dev_data.cumsum()
+            cumsum_dev_data = dev_data.cumsum()
             
             # 计算每个离差序列的 cumsum 的最大差距(widest difference)
             diff_data = max(cumsum_dev_data) - min(cumsum_dev_data)

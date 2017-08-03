@@ -53,8 +53,7 @@ def calculate(context, bar_dict):
             #print('dev_data: ', dev_data)
             
             # 计算离差序列的 cumsum
-            for dev in dev_data:
-                cumsum_dev_data = dev_data.cumsum()
+            cumsum_dev_data = dev_data.cumsum()
             #print('cumsum_dev_data: ', cumsum_dev_data)
             
             # 计算每个离差序列的 cumsum 的最大差距(widest difference)
