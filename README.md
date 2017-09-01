@@ -18,7 +18,7 @@
 
 ## [Hurst_Exponent](https://github.com/ipreacher/Ricequant/tree/master/mine/Hurst_Exponent)
 
-关于 Hurst 指数的运用
+关于 Hurst 指数的应用
 
 ## [Kline_pyecharts](https://github.com/ipreacher/Ricequant/tree/master/mine/Kline_pyecharts)
 
@@ -26,7 +26,7 @@
 
 ## [QR_Analysis](https://github.com/ipreacher/Ricequant/tree/master/mine/QR_Analysis)
 
-Ricequant 社区数据分析，详见[《米筐社区数据面面观》](https://zhuanlan.zhihu.com/p/28887274)。
+Ricequant 社区数据分析，详见[《米筐社区数据面面观》](https://zhuanlan.zhihu.com/p/28887274)
 
 ## [matplotlib_skip_dates_where_there_is_no_data](https://github.com/ipreacher/Ricequant/tree/master/mine/matplotlib_skip_dates_where_there_is_no_data%20)
 
