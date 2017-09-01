@@ -1,6 +1,6 @@
 # 简介
 
-这里的策略都是 Ricequant 平台上的开源策略，其中，[mine](https://github.com/ipreacher/Ricequant/tree/master/mine) 则是由我独立编写的策略集合，而 [clone](https://github.com/ipreacher/Ricequant/tree/master/clone) 由 RQ 的入门教程。
+这里的策略都是 Ricequant 平台上的开源策略，其中，[mine](https://github.com/ipreacher/Ricequant/tree/master/mine) 由我独立编写，而 [clone](https://github.com/ipreacher/Ricequant/tree/master/clone) 是 RQ 的入门教程。
 
 如果这些策略对你有帮助，欢迎请我喝咖啡，[请随意](https://ipreacher.github.io/donate/)。
 
@@ -12,13 +12,13 @@
 
 关于 Ricequant 平台入门，可参考[《再次尝试入门 rqalpha》](https://ipreacher.github.io/2017/rqalpha/)。
 
-关于 Python 入门（量化方向）、Ricequant 平台入门，接受付费咨询（200 RMB/h），非诚勿扰。
+关于 Python 入门（量化方向）、Ricequant 平台入门，接受付费咨询（200 RMB/H），非诚勿扰。
 
-# [mine 目录](https://github.com/ipreacher/Ricequant/tree/master/mine)
+# [mine](https://github.com/ipreacher/Ricequant/tree/master/mine) 目录
 
 ## [Hurst_Exponent](https://github.com/ipreacher/Ricequant/tree/master/mine/Hurst_Exponent)
 
-有关于 Hurst 指数的运用
+关于 Hurst 指数的运用
 
 ## [Kline_pyecharts](https://github.com/ipreacher/Ricequant/tree/master/mine/Kline_pyecharts)
 
@@ -26,7 +26,7 @@
 
 ## [QR_Analysis](https://github.com/ipreacher/Ricequant/tree/master/mine/QR_Analysis)
 
-Ricequant 社区数据分析，详见[《》]()。
+Ricequant 社区数据分析，详见[《米筐社区数据面面观》](https://zhuanlan.zhihu.com/p/28887274)。
 
 ## [matplotlib_skip_dates_where_there_is_no_data](https://github.com/ipreacher/Ricequant/tree/master/mine/matplotlib_skip_dates_where_there_is_no_data%20)
 
