@@ -41,7 +41,7 @@
 * 写给某券商的玩具策略
 
 
-## [Xueqiu_Lhb_Spider](https://github.com/ipreacher/Ricequant/tree/master/mine/Hurst_Exponent/Xueqiu_Lhb_Spider)
+## [Xueqiu_Lhb_Spider](https://github.com/ipreacher/Ricequant/tree/master/mine/Xueqiu_Lhb_Spider)
 
 * update: 2017-07-21
 * 雪球龙虎榜爬虫
