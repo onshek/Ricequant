@@ -1,6 +1,6 @@
 # 简介
 
-这里的策略都是 Ricequant 平台上的开源策略，其中，[mine](https://github.com/ipreacher/Ricequant/tree/master/mine) 由我在 RQ 实习时独立编写，而 [clone](https://github.com/ipreacher/Ricequant/tree/master/clone) 是 RQ 的入门教程。
+这里的策略都是 Ricequant 平台上的开源策略，其中，[mine](https://github.com/ipreacher/Ricequant/tree/master/mine) 由我在 RQ 实习期间独立编写，而 [clone](https://github.com/ipreacher/Ricequant/tree/master/clone) 是 RQ 的入门教程。
 
 如果这些策略对你有帮助，欢迎请我喝咖啡，[请随意](https://ipreacher.github.io/donate/)。
 
