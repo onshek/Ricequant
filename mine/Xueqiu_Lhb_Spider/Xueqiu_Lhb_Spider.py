@@ -34,4 +34,5 @@ for i in range(len(DataFrame.index)):
 		DataFrame_1.loc[i, 'tqQtSkdailyprice_' + key] = DataFrame.ix[i][3][key]	
 
 
-DataFrame_1
+print(DataFrame_1)
+
