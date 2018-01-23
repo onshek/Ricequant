@@ -12,6 +12,8 @@
 
 关于 RQ 平台入门，可参考[《再次尝试入门 rqalpha》](https://ipreacher.github.io/2017/rqalpha/)。
 
+关于“本科生如何得到量化投资方面的工作机会”，可参考[我的回答](https://www.zhihu.com/question/36133590/answer/230760816)。
+
 关于 Python 入门（量化方向）、RQ 平台入门，接受付费咨询（200 RMB/H），非诚勿扰。
 
 # [mine](https://github.com/ipreacher/Ricequant/tree/master/mine) 目录
