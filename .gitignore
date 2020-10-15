@@ -1,0 +1,11 @@
+#########################################
+# Editor temporary/working/backup files #
+.ipynb_checkpoints
+
+# Python files #
+################
+__pycache__
+
+# OS generated files #
+######################
+.DS_Store
