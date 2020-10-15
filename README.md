@@ -89,7 +89,7 @@
 ## [QR_Analysis](https://github.com/onshek/Ricequant/tree/master/mine/QR_Analysis)
 
 * update: 2017-08-29
-* Ricequant 社区数据分析，详见[《米筐社区数据面面观》](https://zhuanlan.zhihu.com/p/28887274)~~、[《【基石数据】米筐社区数据面面观》](https://www.ricequant.com/community/topic/3969)~~及[《米筐社区全方位数据解读》](https://mp.weixin.qq.com/s?__biz=MzA4NTMyOTU3Ng==&mid=2649582209&idx=1&sn=550e1d5edebc461fb345e7d66c79cbb5&chksm=87c05946b0b7d05070db999112b8070a97e72f8d2e3df410eff6275067aaa8147cecdbf58306&scene=38#wechat_redirect)
+* Ricequant 社区数据分析，详见[《米筐社区数据面面观》](https://zhuanlan.zhihu.com/p/28887274)~~、[《【基石数据】米筐社区数据面面观》](https://www.ricequant.com/community/topic/3969)~~ 及[《米筐社区全方位数据解读》](https://mp.weixin.qq.com/s?__biz=MzA4NTMyOTU3Ng==&mid=2649582209&idx=1&sn=550e1d5edebc461fb345e7d66c79cbb5&chksm=87c05946b0b7d05070db999112b8070a97e72f8d2e3df410eff6275067aaa8147cecdbf58306&scene=38#wechat_redirect)
 
 
 ## [matplotlib_3D.ipynb](https://github.com/onshek/Ricequant/blob/master/mine/matplotlib_3D.ipynb)
